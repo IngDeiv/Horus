@@ -1,6 +1,8 @@
 :root{
+    --background-color: #322924;
     --title-color: #E5B429;
     --title-footer-color: #f8d268;
+    --img-footer-color: #e8edf2;
     
 }
 .contenedor{
@@ -12,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
 
-    background:rgb(31, 26, 26);
+    background:rgb(33, 28, 24);
     background-attachment: fixed;
 }
 h2{
@@ -138,7 +140,6 @@ nav ul  li a:hover {
 
 .img-logo {
     width: 80%;
-    /* height: 50%; */
 }
 
 
@@ -316,7 +317,27 @@ hr{
         grid-column: span 1;
         grid-row: span 1;
     }
+    .logo_footer{
+        background-color: var(--img-footer-color);
+    }
+    .w-100-m{
+        width: 100%;
+    }
+    .h-m{
+        display: none;
+    }
+    .h2 {
+        margin-top: 10px;
+    }
+    footer{
+        background-size: cover !important;
+        background-repeat: no-repeat !important; 
+        background-position: center calc(100% + 250px) !important;
+    }
+    .img-logo {
+        margin-top: 80px;
 
+    }
 }
 
 
@@ -328,8 +349,10 @@ hr{
 footer {
     width: 100%;
     padding: 0px 0px;
-    background: url(../../assets/foot.png);
-    background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23f8d268' fill-opacity='0.9' d='M0,32L48,37.3C96,43,192,53,288,85.3C384,117,480,171,576,170.7C672,171,768,117,864,101.3C960,85,1056,107,1152,133.3C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom; 
 }
 
 .container_footer {
@@ -369,7 +392,7 @@ footer {
     color: #fff;
     font-size: 18px;
 }
-.box_footer h2 {
+.h2 {
     font-size: 20px;
     margin-bottom: 30px;
     color: var(--title-footer-color);
@@ -397,12 +420,12 @@ footer {
 
 .box_copyright p{
     margin-top: 20px;
-    color: #7a7a7a;
+    color: var(--background-color);
 }
 .box_copyright hr{
     border: none;
     height: 3px;
-    background-color: #f3f3f3;
+    background-color:var(--background-color);
 }
 
 
